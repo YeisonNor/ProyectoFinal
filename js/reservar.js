@@ -11,7 +11,7 @@ window.onload = function()
 
 function volver()
 {
-	self.location = "menu.html";
+	self.location = "menu.html?cedula=" + cedula;
 }
 
 function buscar() 
