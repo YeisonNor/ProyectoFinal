@@ -1,12 +1,15 @@
+var cedula = "";
+
 window.onload = function()
 {
+	cedula = getParameterByName('cedula');
 	$("#btnRegistrar").click(registrar);
 	$("#btnMenu").click(volver);
 }
 
 function volver()
 {
-	self.location = "menu.html";
+	self.location = "menu.html?cedula=" + cedula;
 }
 
 function registrar() 
@@ -92,4 +95,15 @@ function problemas()
 	$("#divSucces").addClass("nb-hidden");
 	$("#divWarning").removeClass("nb-hidden");
 	$("#divSucces").text('Ocurrio un error.');
+}
+
+function getParameterByName(name, url) 
+{
+    if (!url) url = window.location.href;
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
