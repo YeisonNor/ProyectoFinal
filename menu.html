@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Menu</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/menu.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" ></script>
+		<script src="js/menu.js" ></script>
+	</head>
+	<body>
+		<div class="nav-side-menu">
+			<div class="brand-usuario" id="nombre-usuario"></div>
+			<div class="brand">MENU</div>
+			<i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+		  
+				<div class="menu-list">
+		  
+					<ul id="menu-content" class="menu-content collapse out">
+						<li id="item-reservar" class="nb-hidden">
+						  <a href="#" id="reservar" ><i class="fa fa-dashboard fa-lg"></i>Reservar</a>
+						</li>
+						<li id="item-consultarreservar">
+						  <a href="#" id="verReservas"><i class="fa fa-dashboard fa-lg"></i>Ver Reservas</a>
+						</li>
+						<li id="item-agregar-vehiculo" class="nb-hidden">
+						  <a href="#" id="registrarVehiculo"><i class="fa fa-dashboard fa-lg"></i>Agregar Vehiculo</a>
+						</li>
+						<li id="item-modificar-vehiculo" class="nb-hidden">
+						  <a href="#" id="modificarVehiculo" ><i class="fa fa-dashboard fa-lg"></i>Modificar Vehiculo</a>
+						</li>
+						<li>
+						  <a href="login.html"><i class="fa fa-dashboard fa-lg"></i>Salir</a>
+						</li>
+					</ul>
+			 </div>
+		</div>
+	</body>
+</html>

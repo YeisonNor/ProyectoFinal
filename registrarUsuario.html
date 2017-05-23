@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nuevo Usuario</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/loading.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js" ></script>
+		<script src="js/registrarUsuario.js" ></script>
+	</head>
+	<body>
+		<center><h1 class="text-primary">Nuevo Usuario</h1></center>
+		<form name="formRegistrar" id="formRegistrar" style="margin-left: 10px; margin-right: 10px;">
+			<div class="form-group">
+				<label for="cedula">Cedula</label>
+				<input type="text" class="form-control" id="cedula" name="cedula" placeholder="Cedula" required="required">
+			</div>
+			<div class="form-group">
+				<label for="nombre">Nombre</label>
+				<input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required="required">
+			</div>
+			<div class="form-group">
+				<label for="apellido">Apellido</label>
+				<input type="text" class="form-control" id="apellido" name="apellido" placeholder="Apellido" required="required">
+			</div>
+			<div class="form-group">
+				<label for="celular">Celular</label>
+				<input type="number" class="form-control" id="celular" name="celular" placeholder="Celular">
+			</div>	
+			<div class="form-group">
+				<label for="usuario">Usuario</label>
+				<input type="text" class="form-control" id="usuario" name="usuario" placeholder="Usuario">
+			</div>	
+			<div class="form-group">
+				<label for="password">Contraseña</label>
+				<input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+			</div>				
+			<div class="form-group">
+				<div class="col-sm-12">
+					<br /><center><button type="button" id="btnRegistrar" class="btn btn-primary">Registrar</button> <button type="button" id="btnVolver" class="btn btn-primary">Volver</button></center>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<br /><div class="alert alert-info nb-hidden" id="divInfo">
+						<strong id="txtInfo"></strong>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="col-sm-12">
+					<br /><div id="divSucces" class="alert alert-success nb-hidden" role="alert"></div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-sm-12">
+					<br /><div id="divWarning" class="alert alert-warning nb-hidden" role="alert"></div>
+				</div>
+			</div>
+		</form>
+		
+		
+		
+		<div class="demo nb-hidden" id="divLoader">
+		  <svg class="loader">
+			<filter id="blur">
+			  <fegaussianblur in="SourceGraphic" stddeviation="2"></fegaussianblur>
+			</filter>
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#F4F519" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-2">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#DE2FFF" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-3">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#FF5932" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-4">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#E97E42" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-5">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="white" stroke-width="6" stroke-linecap="round" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-6">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#00DCA3" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-7">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="purple" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		  <svg class="loader loader-8">
+			<circle cx="75" cy="75" r="60" fill="transparent" stroke="#AAEA33" stroke-width="6" stroke-linecap="round" stroke-dasharray="385" stroke-dashoffset="385" filter="url(#blur)"></circle>
+		  </svg>
+		</div>
+		
+	</body>
+</html>
