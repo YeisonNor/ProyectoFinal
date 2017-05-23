@@ -16,9 +16,9 @@
 		$precio = $_POST["precio"]; 
 		
 		$sql = "SELECT * 
-				FROM reserva r
-				LEFT JOIN vehiculo v ON r.placa = v.placa
-				WHERE v.id IS NULL ";
+			FROM vehiculo v
+			LEFT JOIN reserva r ON r.placa = v.placa
+			WHERE r.id IS NULL ";
 		
 		if($placa !== '')
 		{
