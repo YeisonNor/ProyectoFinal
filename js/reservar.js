@@ -2,7 +2,7 @@ var cedula = "";
 
 window.onload = function()
 {
-	var cedula = getParameterByName('cedula');
+	cedula = getParameterByName('cedula');
 	
 	$("#btnBuscar").click(buscar);
 	$("#btnReservar").click(reservar);
