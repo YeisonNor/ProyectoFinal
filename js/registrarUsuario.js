@@ -6,7 +6,7 @@ window.onload = function()
 
 function volver()
 {
-	self.location = "login.html";
+	self.location = "index.html";
 }
 
 function registrar() 
