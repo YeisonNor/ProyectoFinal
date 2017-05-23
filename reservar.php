@@ -73,7 +73,7 @@
 		}
 		else
 		{
-			echo "No se encontraron vehiculos " . $sql;
+			echo "No se encontraron vehiculos!";
 		}
 	}
 	else
