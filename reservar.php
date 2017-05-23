@@ -15,7 +15,7 @@
 		$modelo = $_POST["modelo"];
 		$precio = $_POST["precio"]; 
 		
-		$sql = "SELECT * 
+		$sql = "SELECT v.* 
 			FROM vehiculo v
 			LEFT JOIN reserva r ON r.placa = v.placa
 			WHERE r.id IS NULL ";
@@ -56,11 +56,10 @@
 		if($cantidadRegistros > 0)
 		{
 			$tabla = "<table class='table table-striped'>";
-			$tabla = $tabla . "<tr><th>Id</th><th>Placa</th><th>Marca</th><th>Color</th><th>Km</th><th>Modelo</th><th>Precio</th><th>Reservar</th></tr>";
+			$tabla = $tabla . "<tr><th>Placa</th><th>Marca</th><th>Color</th><th>Km</th><th>Modelo</th><th>Precio</th><th>Reservar</th></tr>";
 			while($row = mysqli_fetch_array($query))
 			{
-				$tabla = $tabla . "<tr><td>" . $row["id"] . "</td>";
-				$tabla = $tabla . "<td>" . $row["placa"] . "</td>";
+				$tabla = $tabla . "<tr><td>" . $row["placa"] . "</td>";
 				$tabla = $tabla . "<td>" . $row["marca"] . "</td>";
 				$tabla = $tabla . "<td>" . $row["color"] . "</td>";
 				$tabla = $tabla . "<td>" . $row["km"] . "</td>";
